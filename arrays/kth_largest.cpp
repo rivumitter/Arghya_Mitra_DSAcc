@@ -1,5 +1,5 @@
 /*
-    submission link : https://leetcode.com/submissions/detail/503036356/
+    submission link : https://leetcode.com/submissions/detail/503395481/
 */
 #include <iostream>
 #include<bits/stdc++.h>
@@ -8,7 +8,7 @@ using namespace std;
 int findKthLargest(vector<int>& nums, int k) {
         int n = nums.size();
         
-        priority_queue <int, vector<int>, less<int> > pq;
+        priority_queue <int> pq;
         for(int i=0;i<n;i++)
             pq.push(nums[i]);
         
